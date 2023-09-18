@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{
+  int i;
+  char a [100];
+  printf("Enter Your Name ");
+  scanf("%s",a);
+  for(i=1;i<=100;i++)
+{
+    printf("%s\t",a);
+}
+return 0;
+}
