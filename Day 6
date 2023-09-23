@@ -1,0 +1,9 @@
+import math
+
+# Number of friends
+N = int(input("Enter the number of friends: "))
+
+# Calculate the minimum number of cars required
+minimum_cars = math.ceil(N / 4)
+
+print(f"The minimum number of cars required is: {minimum_cars}")
