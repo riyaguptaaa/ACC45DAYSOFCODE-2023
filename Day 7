@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int isSpamAccount(int followingCount, int followerCount) {
+    int threshold = 10 * followerCount;
+    if (followingCount > threshold) {
+        return 1;  // Account is spam
+    } else {
+        return 0;  // Account is not spam
+    }
+}
+
+int main() {
+    int followingCount, followerCount;
+    
+    // Input values for following count (X) and follower count (Y)
+    printf("Enter the following count: ");
+    scanf("%d", &followingCount);
+    
+    printf("Enter the follower count: ");
+    scanf("%d", &followerCount);
+    
+    // Check if the account is spam
+    if (isSpamAccount(followingCount, followerCount)) {
+        printf("This is a spam account.\n");
+    } else {
+        printf("This is not a spam account.\n");
+    }
+    
+    return 0;
+}
