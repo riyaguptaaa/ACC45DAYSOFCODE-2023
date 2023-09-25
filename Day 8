@@ -1,0 +1,25 @@
+# Function to calculate the maximum number of people that can take a bath
+def max_people_to_bath(X, Y):
+    # Calculate the number of buckets that can be filled from the geyser
+    buckets_from_geyser = X // Y
+
+    # Calculate the maximum number of people that can take a bath
+    max_people = buckets_from_geyser * 22
+
+    return max_people
+
+try:
+    # Input the number of test cases
+    T = int(input("Enter the number of test cases: "))
+
+    # Process each test case
+    for _ in range(T):
+        # Input X and Y for the test case
+        X, Y = map(int, input("Enter X and Y (separated by space): ").split())
+
+        # Calculate and print the maximum number of people that can take a bath
+        result = max_people_to_bath(X, Y)
+        print("Maximum number of people who can take a bath:", result)
+
+except ValueError:
+    print("Please enter valid numeric input.")
