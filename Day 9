@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+   float a,b,c,d,e,f;
+printf("Enter 1st no.=");
+   scanf("%f" , &a);
+
+printf("Enter 2nd no.=");
+   scanf("%f" , &b);
+
+printf("Added value=%f\n" , c=a+b);
+
+printf("Lets Multiply the value with=");
+   scanf("%f" , &d);
+
+printf("Multiplied value=%f\n" , e=c*d);
+
+printf("Lets Substract the value with=");
+   scanf("%f" , &f);
+
+printf("Your final Result=%f" , e-f);
+return 0;
+}
