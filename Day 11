@@ -1,0 +1,15 @@
+def can_chef_win(N, M):
+    total_balls = M * 6  # Calculate the total number of balls available in M overs
+    max_possible_score = total_balls * 6  # Calculate the maximum possible score in M overs
+    
+    if N <= max_possible_score:
+        return "Chef's team can win"
+    else:
+        return "Chef's team cannot win"
+
+# Input values
+N = int(input("Enter the required runs (N): "))
+M = int(input("Enter the number of overs (M): "))
+
+result = can_chef_win(N, M)
+print(result)
