@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    printf("NAME        :    \tRIYA GUPTA\n");
+    printf("                       ------------------\n");
+    printf("UNIVERSITY  :    \tAMITY UNIVERSITY\n");
+    printf("                       ------------------\n");
+    printf("COURSE      :    \tB.TECH CSE\n");
+    printf("                       -------------------\n");
+    printf("SECTION     :   \tC\n");
+    printf("                       ------------------\n");
+    printf("BATCH       :       \t2023-2027\n");
+    printf("                        ------------------\n");
+    printf("FATHER NAME :    \tMR.UMESH GUPTA\n");
+    printf("                        ------------------\n");
+    printf("MOTHER NAME :    \tMRS.SANGEETA GUPTA\n");
+    printf("                       ------------------\n");
+    return 0;
+}
