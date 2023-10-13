@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Please enter a positive integer for n.\n");
+    } else {
+        int result = n * 5;
+        printf("The %dth multiple of 5 is: %d\n", n, result);
+    }
+
+    return 0;
+}
