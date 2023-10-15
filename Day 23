@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float diagonal1, diagonal2, area;
+
+    // Input the length of the first diagonal
+    printf("Enter the length of the first diagonal: ");
+    scanf("%f", &diagonal1);
+
+    // Input the length of the second diagonal
+    printf("Enter the length of the second diagonal: ");
+    scanf("%f", &diagonal2);
+
+    // Calculate the area of the rhombus
+    area = (diagonal1 * diagonal2) / 2;
+
+    // Display the result
+    printf("The area of the rhombus is: %.2f square units\n", area);
+
+    return 0;
+}
