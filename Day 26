@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int C, X, Y;
+    
+    printf("Enter the number of chocolates Chef wants to gift (C): ");
+    scanf("%d", &C);
+    
+    printf("Enter the number of chocolates Chef has (X): ");
+    scanf("%d", &X);
+    
+    printf("Enter the cost of 1 chocolate (Y rupees): ");
+    scanf("%d", &Y);
+    
+    int cost = 0; // Initialize the total cost to 0
+
+    if (C > X) {
+        cost = (C - X) * Y;
+    }
+
+    printf("The minimum money Chef needs to spend is %d rupees.\n", cost);
+
+    return 0;
+}
