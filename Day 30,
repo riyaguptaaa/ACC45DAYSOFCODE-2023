@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int totalPlates; // Total number of plates prepared (X)
+    int platesPerNeighbor; // Number of plates each neighbor takes (Y)
+
+    printf("Enter the total number of plates prepared (X): ");
+    scanf("%d", &totalPlates);
+
+    printf("Enter the number of plates each neighbor takes (Y): ");
+    scanf("%d", &platesPerNeighbor);
+
+    int neighborsFed = totalPlates / platesPerNeighbor;
+    
+    printf("Chef can feed %d neighbors completely.\n", neighborsFed);
+
+    return 0;
+}
