@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int N; // Number of spooky days left until Halloween
+    int totalIndulgences = 0;
+    
+    // Prompt the user for the value of N
+    printf("Enter the number of spooky days left until Halloween: ");
+    scanf("%d", &N);
+
+    // Calculate how many times he can indulge in his favorite menu
+    int daysInCycle = 7;
+    int remainingDays = N;
+
+    // Calculate how many times he can enjoy his favorite menu in complete cycles
+    totalIndulgences = (N / daysInCycle) * 1; // 1 for Tuesday
+    
+    // Calculate how many days are left after the complete cycles
+    remainingDays = N % daysInCycle;
+    
+    // Calculate how many additional times he can enjoy the menu
+    if (remainingDays >= 1) {
+        totalIndulgences += 1; // He can enjoy it on Tuesday (current day is Monday)
+    }
+
+    // Print the result
+    printf("Dracula can indulge %d times before Halloween.\n", totalIndulgences);
+
+    return 0;
+}
