@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Please enter a valid number of elements.\n");
+        return 1; // Exit with an error code
+    }
+
+    int array[n]; // Declare an integer array of size 'n'
+
+    printf("Enter %d elements into the array:\n", n);
+
+    // Input elements into the array
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &array[i]);
+    }
+
+    printf("Array elements: ");
+
+    // Output the array elements
+    for (int i = 0; i < n; i++) {
+        printf("%d ", array[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
