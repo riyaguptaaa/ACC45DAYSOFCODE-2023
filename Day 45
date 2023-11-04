@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int N, X, D, familyMembers;
+
+    printf("Enter the number of buns in the mall: ");
+    scanf("%d", &N);
+
+    printf("Enter the number of buns each family member needs per day: ");
+    scanf("%d", &X);
+
+    printf("Enter the number of additional days the family can survive without food: ");
+    scanf("%d", &D);
+
+    printf("Enter the total number of family members (including Alice): ");
+    scanf("%d", &familyMembers);
+
+    if (N < X) {
+        printf("Not enough buns to feed the family. Nobody will eat, and the family won't survive.\n");
+        return 0;
+    }
+
+    int totalBunsNeeded = X * familyMembers;
+
+    if (totalBunsNeeded <= N) {
+        printf("The family can survive for %d days.\n", D + 1);
+    } else {
+        printf("Not enough buns to feed the whole family. Nobody will eat anything, and the family can survive for %d days.\n", D);
+    }
+
+    return 0;
+}
